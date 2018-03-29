@@ -14,18 +14,18 @@ int score;
 int life;
   
 void setup(){
-  size(320,200);
+  size(640,400);
   background(255);
   
   centerX = width/2;
   centerY = height/2;
-  ballSize = 15;
+  ballSize = 30;
   ballX = centerX;
   ballY = centerY;
-  speedX = random(-5,5);
-  speedY = random(-5,5);
-  paddleW = 10;
-  paddleH = 50;
+  speedX = random(-100,100);
+  speedY = random(-100,100);
+  paddleW = 20;
+  paddleH = 100;
   rightPaddleX = width-paddleW*2;
   rightPaddleY = centerY-paddleH/2;
   leftPaddleX = paddleW;
@@ -106,6 +106,6 @@ void keyPressed(){
   // restart
   ballX = centerX;
   ballY = centerY;
-  speedX = random(-5,5);
-  speedY = random(-5,5);
+  speedX = random(-8,8);
+  speedY = random(-8,8);
 }
