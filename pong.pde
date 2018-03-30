@@ -100,7 +100,7 @@ void draw(){
   }
 }
 
-void keyPressed(){
+void mousePressed(){
   isPlaying = true;
   
   // restart
