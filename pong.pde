@@ -26,9 +26,9 @@ void setup(){
   speedY = random(-100,100);
   paddleW = 20;
   paddleH = 100;
-  rightPaddleX = width-paddleW*2;
+  rightPaddleX = width-paddleW*2-20;
   rightPaddleY = centerY-paddleH/2;
-  leftPaddleX = paddleW;
+  leftPaddleX = paddleW+20;
   leftPaddleY = centerY-paddleH/2;
   score = 0;
   life = TOTAL_LIFE;
@@ -106,6 +106,6 @@ void mousePressed(){
   // restart
   ballX = centerX;
   ballY = centerY;
-  speedX = random(-8,8);
-  speedY = random(-8,8);
+  speedX = random(-10,10);
+  speedY = random(-10,10);
 }
